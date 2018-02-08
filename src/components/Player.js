@@ -4,7 +4,10 @@ import { connect } from 'react-redux';
 
 class Player extends Component {
   onNewPlayer(e) {
-    this.props.dispatch({ type: 'NEW_PLAYER', payload: this.refs.newPlayer.value })
+    this.props.dispatch({ 
+      type: 'NEW_PLAYER', 
+      payload: this.refs.newPlayer.value, 
+    });
   }
 
   render() {
